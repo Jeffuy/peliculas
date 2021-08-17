@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<title>Streaming vs Blockbuster</title>
+</head>
+<body>
+	<header style="margin-bottom: 20px;">
+		<nav>
+			<div class="nav-wrapper blue-grey darken-1">
+				<a href="https://github.com/Jeffuy" class="brand-logo">Jeff Uy</a>
+
+			</div>
+		</nav>
+	</header>
+	<main>
+	<div class="row";>
+		<div class="col offset-m3 s12 m6">
+			<div class="card blue-grey darken-1">
+				<div class="card-content white-text">
+					<span class="card-title">¿Qué me conviene?</span>
+						<form action="">
+
+								<label for="cuantas">¿Cuántas películas quieres ver?</label>
+								<input style="color: white" placeholder="0" id="cuantas" type="number" class="validate">
+
+
+								<label for="cuanto">¿Cuánto vale rentar una película?</label>
+								<input style="color: white" placeholder="0" id="cuanto" type="number" class="validate">
+
+									<label>¿Cuáles plataformas de streaming precisarías para verlas?<br><br>
+										<input type="checkbox" class="filled-in" id="Netflix" value="6.99"/>
+										<span>Netflix</span>
+									</label>
+								</p>
+								<p>
+									<label>
+										<input type="checkbox" class="filled-in" id="PrimeVideo" value="4.99"/>
+										<span>Prime Video</span>
+									</label>
+								</p>
+								<p>
+									<label>
+										<input type="checkbox" class="filled-in" id="DisneyPlus" value="5.99" />
+										<span>Disney Plus</span>
+									</label>
+								</p>
+								<p>
+									<label>
+										<input type="checkbox" class="filled-in" id="HBOMax" value="8.99" />
+										<span>HBO Max</span>
+									</label>
+								</p>
+								<br><br>
+							<button class="btn waves-effect waves-light" onClick="comparar()" type="button" name="action">COMPARAR
+								<i class="material-icons right"></i>
+							</button>
+
+						</form>
+						<p style="margin-bottom: 5px; margin-top: 10px" id="PrecioRenta"></p>
+						<hr>
+						<p id="PrecioStream" style="margin-bottom: 5px;"></p>
+						<hr>
+						<p id="Result" style="margin-bottom: 5px;"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</main>
+
+	<footer class="page-footer blue-grey darken-1">
+		<div class="container">
+			<div class="row">
+				<div class="col l12 s12 center">
+					<h5 class="white-text">Página creada</h5>
+					<p class="grey-text text-lighten-4">para el primer reto del JS Challenge</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2021 JeffUy
+				<a class="grey-text text-lighten-4 right" href="https://github.com/Jeffuy">Github</a>
+			</div>
+		</div>
+	</footer>
+	<script src="./script/calculos.js"></script>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
